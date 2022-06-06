@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/page">
+<!--글자마다 굵기 다르게 하는것
+리스트 뷰나 리싸이이클 뷰 사용하면 스크롤 가능 근데 왜....
+-->
+
+    <TextView
+        android:id="@+id/Titletext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:text="2022.05.13\n 주문번호 123456789"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/Mainimage1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/food"/>
+
+        <TextView
+            android:id="@+id/Menu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" [드시온] 어떡하죠 국물떡볶이 4봉지\n수량:1\n30,000원 36,000원"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:textSize="15sp">
+
+        <ImageView
+            android:id="@+id/Mainimage2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/food" />
+
+        <TextView
+            android:id="@+id/Menu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" [드시온] 어떡하죠 국물떡볶이 4봉지\n수량:1\n30,000원 36,000원"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/User"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="구매자 정보\n이름 김현셩\n 휴대폰 번호 010-4081-0406" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="주소\n 수령인 김현성 \n 휴대폰 번호 010-0000-1111\n 주소지 상세 서울특별시 구로구 오류2동 8나길 6\n                        빌가나다 빌라 1층 택배 보관함에 넣어주세요" />
+
+    <TextView
+        android:id="@+id/Pay"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="결제 수단\n 네이버 페이 53**-23**-3000-****" />
+
+    <TextView
+        android:id="@+id/totalPay"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="결제 금액\n  ⌞상품 금액  60,000원\n  ⌞배송료⌞ 3,000원\n총 결제금액 63,000원" />
+
+    <TextView
+        android:id="@+id/Butten"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/radius"
+        android:gravity="center"
+        android:text="환불하기"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
